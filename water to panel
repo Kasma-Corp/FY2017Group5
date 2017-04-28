@@ -1,0 +1,24 @@
+import Tkinter
+import tkMessageBox
+
+
+main_window = Tkinter.Tk()
+
+topFrame = Tkinter.Frame(main_window)
+bottomFrame = Tkinter.Frame(main_window)
+
+topFrame.pack()
+bottomFrame.pack(side='bottom')
+
+
+button1 = Tkinter.Button(topFrame, text='water to panel')
+button2 = Tkinter.Button(topFrame, text='water to panel theory')
+button3 = Tkinter.Button(bottomFrame, text='Back')
+
+button1.pack()
+button2.pack()
+button3.pack()
+
+tkMessageBox.showinfo(title="Water to panel", message="Amount, c(specific heat capacity) and temperature.By multiplying these elements we can calculate the energy transfer.This is the energy will the panel need.")
+
+main_window.mainloop()
